@@ -1,33 +1,37 @@
+<!--
+This academic exercise was made based on the tutorial from
+https://www.javascripttutorial.net/javascript-dom/javascript-form/
+variables, classes and others were changed to fit the assignment requirements and understand the process, construction and logic of the code
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="main.css"> 
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<fieldset>
+		
+		<form action="index.html" method="post" id="contact">
+			
+			<h1>Form Validation Assignment</h1>
+			
+			<label>Please enter your name</label>
+			<small></small>
+			<input type="text" id="name">
 
-	<h3>Stacked Form</h3>
-	<p>How to use CSS to create a stacked form:</p>
+			<label>Please enter your email</label>
+			<small></small>
+			<input type="email" id="email">
 
-	<div class="container">
-		<form action="/action_page.php">
-			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label>Please type your message</label>
+			<small></small>
+			<textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
 
-			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-			<label for="country">Country</label>
-			<select id="country" name="country">
-			  <option value="australia">Australia</option>
-			  <option value="canada">Canada</option>
-			  <option value="usa">USA</option>
-			</select>
-
-			<input type="submit" value="Submit">
+			<button type="submit" value="submit">Submit</button>
 		</form>
-	</div>
-
+		
+	</fieldset>
+	<script src="js/main.js"></script>
 </body>
 </html>

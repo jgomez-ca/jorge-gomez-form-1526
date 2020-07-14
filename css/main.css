@@ -1,34 +1,110 @@
+/*------------------------------------------------------------
+Form Validation Project 
+
+Jorge Gomez
+040993417
+20S_MTM1526 - Client-side Development
+
+Colors:
+			#DDD
+			#F5F5F5
+			#6495ED
+
+Font Family:
+			Arial, Helvetica, Helvetica Neue, sans-serif
+
+
+This CSS file is developed to fit the rubric of the assignment.
+It has 2 elements needed on the tutorial
+https://www.javascripttutorial.net/javascript-dom/javascript-form/
+
+------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
 body {
-  font-family: monospace;
+	background-color: #DDD;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	color: white;
+	display: flex;
 }
 
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+fieldset {
+	background-color: #ffffff;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+form {
+	background-color: #ffffff;
+	padding: 20%;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+h1 {
+	padding: 10%;
+	color: #ffffff;
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #6495ED;
+	padding: 20px 40px;
 }
 
-div.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+form label {
+	display: block;
+	margin-bottom: 5px;
+	color: black;
+	font-size: 1.2rem;
+}
+
+form input {
+	width: 100%;
+	display: block;
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+form textarea {
+	width: 100%;
+	display: block;
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+/*Taken from the tutorial*/
+form input.error {
+    border-color: #e74c3c;
+}
+
+form input.success {
+    border-color: #c3e6cb;
+}
+
+/*
+*			Media Queries
+------------------------------------------------------------*/
+
+@media screen (min-width: 25rem) and (max-width: 40rem){
+	fieldset{
+		width: 320px;
+	}
+}
+
+@media screen (min-width: 40rem) and (max-width: 50rem){
+	fieldset{
+		width: 700px;
+	}
+}
+
+@media screen and (min-width: 50rem){
+	fieldset{
+		width: 1000px;
+	}
 }
